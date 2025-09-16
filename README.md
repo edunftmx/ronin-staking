@@ -1,19 +1,17 @@
-# Ronin Fighters Staking dApp
+# Ronin Fighters Staking dApp (Final)
 
-Este es un proyecto base en **Next.js + Thirdweb** para tu sistema de staking de NFTs.
+Este es el proyecto base en **Next.js + Thirdweb** para tu sistema de staking de NFTs en Ronin.
 
-## 🚀 Cómo usar
+## 🚀 Pasos para usar
 
-1. Clona o sube este proyecto a tu repositorio de GitHub.
+1. Sube este proyecto a tu repositorio en GitHub.
 2. En `app/page.tsx`, reemplaza las direcciones de contrato:
-   - `NFT_CONTRACT_ADDRESS` → tu contrato de colección NFT
-   - `STAKING_CONTRACT_ADDRESS` → tu contrato de staking
-   - `FIGHT_TOKEN_ADDRESS` → tu token FIGHT (ERC-20)
-3. Instala dependencias (si lo corres local):
-   ```bash
-   npm install
-   npm run dev
-   ```
-4. Para desplegar:
-   - Conecta tu repo en [Vercel](https://vercel.com/).
-   - Vercel detectará Next.js y desplegará automáticamente.
+   - `NFT_CONTRACT_ADDRESS`
+   - `STAKING_CONTRACT_ADDRESS`
+   - `FIGHT_TOKEN_ADDRESS`
+3. Despliega en [Vercel](https://vercel.com/).
+
+## 🎨 Estilos
+- Tema oscuro moderno con colores morado y cyan.
+- Tarjetas (`.card`) con bordes redondeados y sombra.
+- Botones estilizados con hover.

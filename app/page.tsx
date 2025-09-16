@@ -54,14 +54,7 @@ export default function Page() {
 
         <div style={{ display: "grid", gap: 15, gridTemplateColumns: "1fr 1fr" }}>
           {ownedNfts?.map((nft) => (
-            <div
-              key={nft.metadata.id}
-              style={{
-                border: "1px solid #ddd",
-                padding: 10,
-                borderRadius: 10,
-              }}
-            >
+            <div className="card" key={nft.metadata.id}>
               <ThirdwebNftMedia
                 metadata={nft.metadata}
                 height="200px"
