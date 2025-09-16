@@ -11,8 +11,8 @@
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "@thirdweb-dev/react": "4.5.1",
-    "@thirdweb-dev/sdk": "4.5.1",
+    "@thirdweb-dev/react": "4.9.4",
+    "@thirdweb-dev/sdk": "4.9.4",
     "ethers": "5.7.2"
   }
 }
