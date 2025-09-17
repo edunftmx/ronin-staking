@@ -1,11 +1,11 @@
 "use client";
 
-import "./globals.css"; // Asegúrate de que este archivo exista
+import "./globals.css";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
-import { createChain } from "thirdweb";
+import { defineChain } from "@thirdweb-dev/chains";
 
-const RONIN = createChain({
-  id: 2020, // Chain ID de Ronin
+const RONIN = defineChain({
+  id: 2020,
   name: "Ronin",
   nativeCurrency: {
     name: "Ronin",
