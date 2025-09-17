@@ -2,11 +2,14 @@
 
 import "./globals.css";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
+import type { Chain } from "@thirdweb-dev/chains";
 
-// Definimos Ronin manualmente
-const RONIN = {
+const RONIN: Chain = {
+  chain: "ronin",
   chainId: 2020,
   name: "Ronin",
+  shortName: "ron",
+  slug: "ronin",
   nativeCurrency: {
     name: "Ronin",
     symbol: "RON",
@@ -17,6 +20,7 @@ const RONIN = {
     {
       name: "Ronin Explorer",
       url: "https://app.roninchain.com",
+      standard: "EIP3091",
     },
   ],
   testnet: false,
@@ -32,9 +36,4 @@ export default function RootLayout({
       <body>
         <ThirdwebProvider activeChain={RONIN}>
           {children}
-        </ThirdwebProvider>
-      </body>
-    </html>
-  );
-}
-
+        </T
