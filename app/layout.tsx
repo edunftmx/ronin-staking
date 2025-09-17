@@ -1,5 +1,3 @@
-"use client";
-
 import "./globals.css";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import type { Chain } from "@thirdweb-dev/chains";
@@ -26,6 +24,11 @@ const RONIN: Chain = {
   testnet: false,
 };
 
+export const metadata = {
+  title: "Ronin Staking",
+  description: "Staking platform for Ronin NFTs",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -36,4 +39,9 @@ export default function RootLayout({
       <body>
         <ThirdwebProvider activeChain={RONIN}>
           {children}
-        </T
+        </ThirdwebProvider>
+      </body>
+    </html>
+  );
+}
+
