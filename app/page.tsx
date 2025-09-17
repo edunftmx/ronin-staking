@@ -74,7 +74,7 @@ export default function Page() {
               <Web3Button
                 contractAddress={STAKING_CONTRACT_ADDRESS}
                 action={async (contract: SmartContract) =>
-                  contract.call("stake", nft.metadata.id)
+                  contract.call("stake", [nft.metadata.id])
                 }
               >
                 Stake
@@ -83,7 +83,7 @@ export default function Page() {
               <Web3Button
                 contractAddress={STAKING_CONTRACT_ADDRESS}
                 action={async (contract: SmartContract) =>
-                  contract.call("unstake", nft.metadata.id)
+                  contract.call("unstake", [nft.metadata.id])
                 }
               >
                 Unstake
