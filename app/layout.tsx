@@ -2,10 +2,10 @@
 
 import "./globals.css";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
-import { defineChain } from "@thirdweb-dev/chains";
 
-const RONIN = defineChain({
-  id: 2020,
+// Definimos Ronin manualmente
+const RONIN = {
+  chainId: 2020,
   name: "Ronin",
   nativeCurrency: {
     name: "Ronin",
@@ -13,14 +13,14 @@ const RONIN = defineChain({
     decimals: 18,
   },
   rpc: ["https://api.roninchain.com/rpc"],
-  blockExplorers: [
+  explorers: [
     {
       name: "Ronin Explorer",
       url: "https://app.roninchain.com",
     },
   ],
   testnet: false,
-});
+};
 
 export default function RootLayout({
   children,
@@ -37,3 +37,4 @@ export default function RootLayout({
     </html>
   );
 }
+
